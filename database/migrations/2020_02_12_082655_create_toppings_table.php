@@ -15,7 +15,6 @@ class CreateToppingsTable extends Migration
     {
         Schema::create('toppings', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->unsignedInteger('pizza_id');
             $table->string('name');
             $table->timestamps();
         });
